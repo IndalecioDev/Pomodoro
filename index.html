@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ritual de Lectura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;600;800&family=Orbitron:wght@400;500;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="panel-tag">modo lectura</div>
+    <div class="chibi">
+      <img src="chibi.png" alt="Sticker personalizado" />
+    </div>
+
+    <h1>Temporizador de lectura</h1>
+    <p class="subtitle">Convierte tu sesión en el ritual de lectura perfecto.</p>
+
+    <div class="hp-bar"><div class="hp-fill"></div></div>
+
+    <div class="field">
+      <label for="minutes">¿Cuánto tiempo quieres leer hoy?</label>
+      <input type="number" id="minutes" min="1" max="240" value="25">
+        </div>
+
+    <div class="mode-select">
+      <p class="mode-label">¿Qué tipo de lectura quieres hoy?</p>
+      <div class="mode-grid">
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="chill" checked>
+          <div class="mode-card-body">
+            <span class="mode-name">Chill</span>
+            <span class="mode-note">Lo-fi relajado para tardes suaves</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="misterio">
+          <div class="mode-card-body">
+            <span class="mode-name">Misterio</span>
+            <span class="mode-note">Suspenso suave con cuerdas y synths</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="terror">
+          <div class="mode-card-body">
+            <span class="mode-name">Terror</span>
+            <span class="mode-note">Latidos y atmósferas oscuras</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="sad">
+          <div class="mode-card-body">
+            <span class="mode-name">Lluvia</span>
+            <span class="mode-note">Tormenta relajante sin salir de casa</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="celtica">
+          <div class="mode-card-body">
+            <span class="mode-name">Fantasía</span>
+            <span class="mode-note">Arpas y coros para mundos mágicos</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="jazz">
+          <div class="mode-card-body">
+            <span class="mode-name">Jazz</span>
+            <span class="mode-note">Contrabajo suave y saxos nocturnos</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="hoguera">
+          <div class="mode-card-body">
+            <span class="mode-name">Hoguera</span>
+            <span class="mode-note">Chasquidos de fuego y crepitar envolvente</span>
+          </div>
+        </label>
+        <label class="mode-card">
+          <input type="radio" name="reading-mode" value="anime">
+          <div class="mode-card-body">
+            <span class="mode-name">Anime</span>
+            <span class="mode-note">Inspiración de bandas sonoras de animes</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="timer-display">
+      <div id="time-display">25:00</div>
+      <div id="status-text" class="status">A sumergirte en la lectura</div>
+    </div>
+
+    <div class="buttons">
+      <button id="btn-start" class="btn-start">Empezar</button>
+      <button id="btn-pause" class="btn-pause">Pausa</button>
+      <button id="btn-reset" class="btn-reset">Reiniciar</button>
+    </div>
+
+    <div class="music-indicator">
+      <span id="music-dot" class="dot off"></span>
+      <span id="music-text"></span>
+        </div>
+
+    <div id="video-wrapper" class="video-wrapper" hidden>
+      <p class="video-title" id="video-title">Ambientación activa</p>
+      <div class="video-frame">
+        <iframe id="mode-video" src="" title="Ambientación de lectura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <p class="hint">
+     &copy; 2025  - Inda 
+    </p>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
